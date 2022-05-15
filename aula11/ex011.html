@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NACIONALIDADE</title>
+    <style>
+        body {
+            background: rgb(89, 89, 223);
+            color: white;
+            font: normal 17pt Arial;
+        }
+        h1 {
+            color: yellow;
+        
+        }
+    </style>
+</head>
+<body>
+    <h1>Sistema Nacionalidade</h1>
+    País de origem: <input type="text" name="txtn1" id="txtn1">
+    <input type="button" value="Verificar" onclick="busca()">
+    <div id="res"></div>
+
+    <script>
+        function busca(){
+            var tn1 = window.document.getElementById('txtn1')
+            var res = window.document.getElementById('res')
+            var n1 = String(tn1.value)
+            if(n1 == 'Brasil'){
+                res.innerHTML = `Você é Brasileiro`
+            }else {res.innerHTML = `Você é Estrangeiro`}
+            
+        }
+        
+                
+    </script>
+    
+    
+
+    
+</body>
+</html>
